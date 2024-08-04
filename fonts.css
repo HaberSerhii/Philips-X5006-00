@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat.ttf);
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto.ttf);
+  font-display: swap;
+  font-style: normal;
+}

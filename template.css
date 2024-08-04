@@ -1,0 +1,146 @@
+@import url(./fonts.css);
+
+:root {
+  --font-roboto: "Roboto";
+  --font-montserrat: "Montserrat";
+}
+
+.lang {
+  display: none;
+}
+
+.lang.active {
+  display: block;
+}
+
+.button__language {
+  top: 20px;
+  border-radius: 100px;
+  min-width: 94px;
+  min-height: 33px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 8px 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+  overflow: hidden;
+  transition: color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0.65;
+}
+.button__language:hover,
+.button__language:focus {
+  background-color: rgb(92, 91, 91);
+  color: #fafafa;
+}
+
+.button__language:hover,
+.button__language:focus {
+  color: #fafafa;
+}
+
+.button__language:after {
+  content: "";
+  background: #fd9222;
+
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.button__language:hover:after,
+.button__language:focus:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: var(--font-roboto), var(--font-montserrat), sans-serif;
+  background: var(
+    --Background-Web_Full,
+    radial-gradient(
+      61.4% 35.18% at 88.44% 104.58%,
+      #fff8d1 0,
+      rgba(255, 248, 209, 0) 100%
+    ),
+    radial-gradient(
+      24.2% 54.94% at 114.53% 46.02%,
+      #fff8d1 0,
+      rgba(255, 248, 209, 0) 100%
+    ),
+    radial-gradient(
+      44.1% 20.6% at 70.31% -1.46%,
+      #fff8d1 0,
+      rgba(255, 248, 209, 0) 100%
+    ),
+    radial-gradient(
+      51.78% 69.08% at 109.69% 36.7%,
+      #d4d8fc 0,
+      rgba(212, 216, 252, 0) 100%
+    ),
+    radial-gradient(
+      43.58% 54.37% at 71.82% 66.11%,
+      #d4d8fc 0,
+      rgba(212, 216, 252, 0) 100%
+    ),
+    radial-gradient(
+      69.89% 86.85% at 17.08% 51.31%,
+      #ffe9dc 0,
+      rgba(255, 233, 220, 0) 100%
+    ),
+    radial-gradient(
+      46.43% 46.55% at 12.53% 7.34%,
+      #ffe9dc 0,
+      rgba(255, 233, 220, 0) 100%
+    ),
+    #fff
+  );
+}
+
+.main__rich__container {
+  width: 100%;
+  margin: 150px 0;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.your-blocks {
+  border: 1px solid tomato;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .main__rich__container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__rich__container {
+    width: 976px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main__rich__container {
+    width: 1366px;
+  }
+}

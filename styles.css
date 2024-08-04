@@ -1,0 +1,62 @@
+@import url(./template.css);
+
+.product__description.base-padding {
+  padding: 0;
+  border-radius: 0px;
+}
+
+body {
+  padding: 0;
+}
+
+.your__class__Container .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.your__class__Container img {
+  margin: 0;
+}
+
+.your__class__Container p {
+  padding: 0;
+  margin: 0;
+}
+
+.your__class__Container h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.your__class__Container ul {
+  padding: 0;
+}
+
+.your__class__Container ul li {
+  padding: 0;
+}
+
+.your__class__Container {
+  overflow: hidden;
+}
+
+.your__class__Container div {
+  padding: 0;
+  width: initial;
+}
+
+.your__class__Container br {
+  display: block;
+}
+
+.product__body .el-tabs__header {
+  z-index: 6;
+}

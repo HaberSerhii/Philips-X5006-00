@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <button class="button__language" id="lang-switch">Включить руссскую версию</button>
+    <div class="main__rich__container" id="content">
+        <div class="your-blocks lang uk">Замість DIV "Your-blocks" для роботи вставляєш свій div зі своїми класами і
+            наповненнями, template зроблений для коректного відображення шрифтів, розмірів rich контенту. Для
+            підключення
+            стилів вводимо @import url(./посилання на template.css) </div>
+        <div class="your-blocks lang ru">Вместо DIV "Your-blocks" для работы вставляешь свой div со своими классами и
+            наполнениями, template сделан для корректного отображения шрифтов, размеров rich контента. Для подключения
+            стилей вводим @import url(./ссылка на template.css) </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentLang = 'uk';
+        const ukText = document.querySelector('.lang.uk');
+        const ruText = document.querySelector('.lang.ru');
+        const switchButton = document.getElementById('lang-switch');
+
+        ukText.classList.add('active');
+
+        switchButton.addEventListener('click', function () {
+            if (currentLang === 'uk') {
+                ukText.classList.remove('active');
+                ruText.classList.add('active');
+                switchButton.textContent = 'Увімкнути українську версію';
+                currentLang = 'ru';
+            } else {
+                ruText.classList.remove('active');
+                ukText.classList.add('active');
+                switchButton.textContent = 'Включить русскую версию';
+                currentLang = 'uk';
+            }
+        });
+    });
+</script>
+
+</html>
