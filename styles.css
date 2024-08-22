@@ -12,6 +12,7 @@ body {
 .X5006-00 img {
   margin: 0;
   width: 100%;
+  display: block;
 }
 
 .X5006-00 p {
@@ -118,6 +119,8 @@ body {
   color: #000;
 }
 .X5006-00 .properties-list {
+  display: grid;
+  justify-items: center;
   list-style-type: disc;
   margin-bottom: 26px;
 }
@@ -141,14 +144,25 @@ body {
   background-image: url("https://i.citrus.world/uploads/Haber/X5006_00/about-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
+
   display: grid;
   gap: 42px;
 }
-.X5006-00 .about-shave-container {
+
+.X5006-00 .about-shave-item {
   display: grid;
   gap: 16px;
-  width: 300px;
 }
+
+.X5006-00 .about-shave-container .about-shave-line {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .X5006-00 .about-shave-title {
   font-family: var(--font-family);
   font-weight: 700;
@@ -176,11 +190,162 @@ body {
   color: #fff;
 }
 
+.X5006-00 .about-shave-item:nth-child(2) .about-shave-title,
+.X5006-00 .about-shave-item:nth-child(4) .about-shave-title {
+  color: #000;
+}
+
+.X5006-00 .about-shave-item:nth-child(1) .about-shave-description {
+  margin-bottom: 12px;
+}
+
+.X5006-00 .about-shave-item:nth-child(4) {
+  padding-bottom: 12px;
+}
+
+.X5006-00 .shave-design {
+  position: relative;
+  background-color: white;
+  padding: 16px 0 0 0;
+  margin: -16px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.X5006-00 .shave-design-background {
+  background-image: url("https://i.citrus.world/uploads/Haber/X5006_00/about-second-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 174px;
+}
+
+.X5006-00 .shave-design-title {
+  width: 300px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+.X5006-00 .shave-design-description {
+  width: 300px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #242424;
+  margin-bottom: 16px;
+}
+.X5006-00 .shave-design-background {
+  margin-bottom: 36px;
+}
+.X5006-00 .shave-design-bgimage {
+  position: absolute;
+  top: 53%;
+  left: 16%;
+  background-color: transparent;
+  width: 90px;
+  height: 90px;
+}
+.X5006-00 .shave-design-span {
+  font-weight: 700;
+}
+
+.shave-design-image-container {
+  border-radius: 0 0 766px 766px;
+  width: 360px;
+  height: 241px;
+  background-image: url("https://i.citrus.world/uploads/Haber/X5006_00/design-bg-image.webp");
+  background-position: center;
+  background-size: contain;
+  display: grid;
+  align-items: center;
+}
+.X5006-00 .shave-design-image {
+  width: 186px;
+  height: 186px;
+  margin: 0 auto;
+}
+
+.X5006-00 .capability {
+  padding: 24px 16px 0 16px;
+  display: grid;
+  justify-items: center;
+}
+.X5006-00 .capability-title {
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+}
+.X5006-00 .capability-description {
+  margin-bottom: 32px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #242424;
+}
+.X5006-00 .capability-image {
+  margin-bottom: 24px;
+  border-radius: 21px;
+}
+
+.X5006-00 .compare {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.X5006-00 .warranty-reg-container {
+  height: 200px;
+  background-image: url("https://i.citrus.world/uploads/Haber/X5006_00/warranty-reg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 60px;
+}
+.X5006-00 .warranty-reg-image {
+  width: 71px;
+  height: 81px;
+  margin-left: 20px;
+}
+.X5006-00 .warranty-reg-uppertitle {
+  margin-left: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 111%;
+  color: #fff;
+}
+.X5006-00 .warranty-reg-logo-container {
+  height: 70px;
+  background-color: #7d969a;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.X5006-00 .warranty-reg-logo {
+  width: 26px;
+  height: 34px;
+}
 @media (min-width: 768px) {
   .X5006-00 .visually-hidden {
-    position: absolute;
-    width: 0px;
-    height: 0px;
+    width: 1px;
+    height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
@@ -270,6 +435,124 @@ body {
     font-size: 15px;
     margin-right: 10px;
     color: #fff;
+  }
+  .X5006-00 .about-shave {
+    padding: 32px;
+    background-image: url("https://i.citrus.world/uploads/Haber/X5006_00/about-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    gap: 42px;
+  }
+  .X5006-00 .about-shave-container {
+    position: relative;
+    display: grid;
+    grid-area: container;
+  }
+
+  .X5006-00 .about-shave-item {
+    display: grid;
+    grid-template-columns: 1fr 348px;
+    grid-template-areas: "container image";
+  }
+
+  .X5006-00 .about-shave-container .about-shave-image {
+    width: 348px;
+    grid-area: image;
+  }
+
+  .X5006-00 .about-shave-title {
+    position: absolute;
+    top: 23%;
+    width: 300px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 134%;
+    color: #fff;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0px;
+  }
+
+  .X5006-00 .about-shave-container .about-shave-line {
+    position: absolute;
+    top: 30%;
+    width: 334px;
+    height: 50px;
+    margin: 0px;
+    border: 0;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .X5006-00 .about-shave-description {
+    position: absolute;
+    top: 38%;
+    width: 300px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 134%;
+    color: #fff;
+    text-shadow: 3px 4px 13px #000;
+    margin-bottom: 16px;
+  }
+  .X5006-00 .about-shave-span {
+    font-weight: 700;
+  }
+  .X5006-00 .about-shave-uppertitle {
+    position: absolute;
+    top: 73%;
+    width: 300px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 134%;
+    color: #fff;
+  }
+  .X5006-00 .about-shave-item:nth-child(2),
+  .X5006-00 .about-shave-item:nth-child(4) {
+    display: grid;
+    grid-template-columns: 348px 1fr;
+    grid-template-areas: "image container";
+  }
+  .X5006-00 .about-shave-item:nth-child(2) svg {
+    transform: rotateY(180deg);
+    top: 40%;
+    right: -3%;
+  }
+  .X5006-00 .about-shave-item:nth-child(2) .about-shave-title {
+    width: 320px;
+    top: 30%;
+    right: -11%;
+    color: #000;
+  }
+  .X5006-00 .about-shave-item:nth-child(2) .about-shave-description {
+    width: 277px;
+    top: 50%;
+    left: 5%;
+    color: #000;
+  }
+
+  .X5006-00 .about-shave-item:nth-child(4) svg {
+    width: 360px;
+    transform: rotateY(180deg);
+    top: 42%;
+    right: -3%;
+  }
+
+  .X5006-00 .about-shave-item:nth-child(4) .about-shave-title {
+    width: 320px;
+    top: 32%;
+    right: -8%;
+    color: #000;
+  }
+
+  .X5006-00 .about-shave-item:nth-child(4) .about-shave-description {
+    width: 322px;
+    top: 50%;
+    left: 3%;
+    color: #000;
   }
 }
 
