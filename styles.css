@@ -262,7 +262,7 @@ body {
   height: 241px;
   background-image: url("https://i.citrus.world/uploads/Haber/X5006_00/design-bg-image.webp");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   display: grid;
   align-items: center;
 }
@@ -439,7 +439,7 @@ body {
   .X5006-00 .about-shave {
     padding: 32px;
     background-image: url("https://i.citrus.world/uploads/Haber/X5006_00/about-background.webp");
-    background-repeat: no-repeat;
+    background-position: top;
     background-size: cover;
     display: grid;
     gap: 42px;
@@ -553,6 +553,72 @@ body {
     top: 50%;
     left: 3%;
     color: #000;
+  }
+
+  .X5006-00 .compare {
+    padding: 48px 40px;
+    width: 640px;
+    height: auto;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+  }
+  .X5006-00 .compare-title {
+    padding: 16px 64px;
+    background: #8299b3;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #fff;
+  }
+  .X5006-00 .compare-list {
+    margin: 0;
+    display: grid;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .X5006-00 ul li::before {
+    content: none;
+    color: black;
+    display: inline-block;
+    font-size: 15px;
+    width: 5px;
+    margin-right: 5px;
+  }
+
+  .X5006-00 .compare-item {
+    display: grid;
+    grid-template-columns: repeat(6, 105px);
+    gap: 2px;
+  }
+
+  .X5006-00 .compare-item-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 16px 2px;
+    background: #dae0e8;
+    gap: 16px;
+    text-align: center;
+  }
+  .X5006-00 .item-image {
+    width: 100%;
+  }
+  .X5006-00 .compare-item-container:nth-child(4) img {
+    width: 70%;
+  }
+  .X5006-00 .item-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .X5006-00 .compare-item-container:nth-child(4) {
+    background-color: #9daec3;
+    color: #fff;
+    margin-left: -2px;
+    margin-right: -2px;
   }
 }
 
