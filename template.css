@@ -139,7 +139,7 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .main__rich__container {
     width: 1366px;
   }
