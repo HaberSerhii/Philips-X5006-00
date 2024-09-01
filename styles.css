@@ -723,6 +723,15 @@ body {
     border: 0;
     overflow: hidden;
   }
+
+  .X5006-00 .compare ul li::before {
+    content: none;
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    width: 5px;
+    margin-right: 5px;
+  }
   .X5006-00 .compare-title {
     padding: 16px 64px;
     background: #8299b3;
@@ -737,15 +746,6 @@ body {
     display: grid;
     align-items: center;
     gap: 2px;
-  }
-
-  .X5006-00 ul li::before {
-    content: none;
-    color: black;
-    display: inline-block;
-    font-size: 15px;
-    width: 5px;
-    margin-right: 5px;
   }
 
   .X5006-00 .compare-item {
@@ -1168,15 +1168,6 @@ body {
     display: grid;
     align-items: center;
     gap: 2px;
-  }
-
-  .X5006-00 ul li::before {
-    content: none;
-    color: black;
-    display: inline-block;
-    font-size: 14px;
-    width: 5px;
-    margin-right: 5px;
   }
 
   .X5006-00 .compare-item {
@@ -1603,15 +1594,6 @@ body {
     display: grid;
     align-items: center;
     gap: 2px;
-  }
-
-  .X5006-00 ul li::before {
-    content: none;
-    color: black;
-    display: inline-block;
-    font-size: 14px;
-    width: 5px;
-    margin-right: 5px;
   }
 
   .X5006-00 .compare-item {
